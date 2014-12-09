@@ -2,7 +2,7 @@
 $(document).ready(function(e) {
     //WatchId se refiere  a la aceleracion 'actual'
 	//
-	var watchId = null;
+	var watchID = null;
 	
 	document.addEventListener("deviceready", Dispositivo_Listo, false);
 	
@@ -18,14 +18,14 @@ $(document).ready(function(e) {
 		//
 		var opciones = { frequency: 2000 };
 		
-		watchId = navigator.accelerometer.watchAcceleration(correcto, Error, opciones);
+		watchID = navigator.accelerometer.watchAcceleration(correcto, Error, opciones);
 		navigator.geolocation.getCurrentPosition(Localiza, ErrorLocalizacion);
 	}
 	
 // Detiene la 'observacion' de la aceleracion
 //
  function Detente() {
-	 if (watchId) {
+	 if (watchID) {
 		 navigator.accelerometer.clearwatch(watchID);
 		 watchID = null;
 	 }
