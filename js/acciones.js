@@ -34,9 +34,9 @@ $(document).ready(function(e) {
  //
  function Correcto(acceleration) {
 	 var element = document.getElementById('acelerometro');
-	 element.innerHTML = 'Aceleracion en X: ' + aceleration.x + '<br />' +
-	                     'Aceleracion en Y: ' + aceleration.y + '<br />' +
-						 'Aceleracion en Z: ' + aceleration.z + '<br />' +
+	 element.innerHTML = 'Aceleracion en X: ' + acceleration.x + '<br />' +
+	                     'Aceleracion en Y: ' + acceleration.y + '<br />' +
+						 'Aceleracion en Z: ' + acceleration.z + '<br />' +
 						 'Intervalo: '   + acceleration.timestamp + '<br />';
  }
  //Error: falla al obtener la aceleracion
