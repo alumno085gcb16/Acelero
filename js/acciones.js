@@ -26,7 +26,7 @@ $(document).ready(function(e) {
 //
  function Detente() {
 	 if (watchID) {
-		 navigator.accelerometer.clearwatch(watchID);
+		 navigator.accelerometer.clearWatch(watchID);
 		 watchID = null;
 	 }
  }
