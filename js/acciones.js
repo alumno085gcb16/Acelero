@@ -55,7 +55,7 @@ $(document).ready(function(e) {
 	 'Precision de Altitud: ' + posicion.coords.altitudeAccuracy + '<br />' +
 	 'Direccion: ' + posicion.coords.heading + '<br />' +
 	 'Velocidad: ' + posicion.coords.speed + '<br />' +
-	 'IIntervalo: ' + posicion.timestamp  +' <br />';
+	 'Intervalo: ' + posicion.timestamp  +' <br />';
  }
  //Error en la geoolocalizacion 
  //
