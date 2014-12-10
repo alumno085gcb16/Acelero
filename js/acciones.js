@@ -9,16 +9,16 @@ $(document).ready(function(e) {
 	// Cuando esta listo el dispositivo 
 	//
 	function Dispositivo_Listo() {
-		comienza();
+		Comienza();
 	}
 	// Empieza la 'observacion' de la aceleracion
 	//
-	function comienza() {
+	function Comienza() {
 		//Actualiza la aceleracion cada 2 segundos
 		//
 		var opciones = { frequency: 2000 };
 		
-		watchID = navigator.accelerometer.watchAcceleration(correcto, Error, opciones);
+		watchID = navigator.accelerometer.watchAcceleration(Correcto, Error, opciones);
 		navigator.geolocation.getCurrentPosition(Localiza, ErrorLocalizacion);
 	}
 	
@@ -32,11 +32,11 @@ $(document).ready(function(e) {
  }
  // correcto: Toma una captura de la aceleracion
  //
- function correcto(acceleration) {
+ function Correcto(acceleration) {
 	 var element = document.getElementById('acelerometro');
-	 element.innerHTML = 'Aceleracion en x: ' + aceleration.x + '<br />' +
-	                     'Aceleracion en y: ' + aceleration.y + '<br />' +
-						 'Aceleracion en z: ' + aceleration.z + '<br />' +
+	 element.innerHTML = 'Aceleracion en X: ' + aceleration.x + '<br />' +
+	                     'Aceleracion en Y: ' + aceleration.y + '<br />' +
+						 'Aceleracion en Z: ' + aceleration.z + '<br />' +
 						 'Intervalo: '   + acceleration.timestamp + '<br />';
  }
  //Error: falla al obtener la aceleracion
